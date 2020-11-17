@@ -6,14 +6,6 @@
         <title>Report Card</title>
         {% endif %}
     </head>
-    <body>
-        <h1>Hi, {{ user.username }}!</h1>
-        {% for item in data %}
-        <div>
-            <p>
-                <b>{{ item.subject }}</b> - {{ item.marks }}</b>
-            </p>
-        </div>
-        {% endfor %}
-    </body>
+    {% block content%}
+    {% endblock %}
 </html>
